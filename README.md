@@ -4,7 +4,7 @@
 
 **QuickChat** is a full-stack real-time messaging platform built with modern web technologies. It enables **instant communication**, **secure authentication**, and **seamless chatting** — designed for individuals and teams who value fast and reliable conversations.
 
-[Live Demo](https://quick-chat-nine-beta.vercel.app) • [Portfolio](https://harshkushwaha7x.github.io/Portflio.2/) • [GitHub](https://github.com/harshkushwaha7x/QuickChat)
+[Live Demo](https://quickchat-orcin.vercel.app/) • [Portfolio](https://harshkushwaha7x.github.io/Portflio.2/) • [GitHub](https://github.com/harshkushwaha7x/quickchat)
 
 </div>
 
@@ -235,9 +235,9 @@ This project is licensed under the **MIT License** — see [LICENSE](https://git
 
 **Harsh Kushwaha** — Developer & Maintainer
 
-* Portfolio: [https://harshkushwaha7x.github.io/Portfolio](https://harshkushwaha7x.github.io/Portfolio)
+* Portfolio: [https://harshkushwaha7x.github.io/Portflio.2/](https://harshkushwaha7x.github.io/Portflio.2/)
 * GitHub: [https://github.com/harshkushwaha7x](https://github.com/harshkushwaha7x)
-* LinkedIn: [https://www.linkedin.com/in/harshkushwaha7x/](https://www.linkedin.com/in/harshkushwaha7x/)
+* LinkedIn: [https://www.linkedin.com/in/harsh-kushwaha-7x/](https://www.linkedin.com/in/harsh-kushwaha-7x/)
 * Email: [harshkushwaha4151@gmail.com](mailto:harshkushwaha4151@gmail.com)
 
 ---
