@@ -1,315 +1,255 @@
 <div align="center">
 
-# QUICK-CHAT 💬
+# QUICKCHAT 💬
 
-Real-Time Messaging, Instant Connections
+**QuickChat** is a full-stack real-time messaging platform built with modern web technologies. It enables **instant communication**, **secure authentication**, and **seamless chatting** — designed for individuals and teams who value fast and reliable conversations.
 
-![Last Commit](https://img.shields.io/github/last-commit/elyse502/quick-chat?style=flat-square) 
-![Languages](https://img.shields.io/github/languages/top/elyse502/quick-chat?style=flat-square&color=blue)
-![License](https://img.shields.io/github/license/elyse502/quick-chat?style=flat-square)
-
-*Powered by cutting-edge technologies:*
-
-![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socket.io&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-
-## LIVE - DEMO 🌐
-Visit the 👉 [_LINK 🔗_](https://quick-chat-nine-beta.vercel.app)
+[Live Demo](https://quick-chat-nine-beta.vercel.app) • [Portfolio](https://harshkushwaha7x.github.io/Portflio.2/) • [GitHub](https://github.com/harshkushwaha7x/QuickChat)
 
 </div>
 
-<br /><hr /><br />
+---
 
-## Table of Contents
+<p align="center">
+  <a href="https://github.com/harshkushwaha7x/QuickChat"><img src="https://img.shields.io/github/last-commit/harshkushwaha7x/QuickChat?style=flat-square" alt="last commit"></a>
+  <a href="https://github.com/harshkushwaha7x/QuickChat"><img src="https://img.shields.io/github/languages/top/harshkushwaha7x/QuickChat?style=flat-square" alt="languages"></a>
+  <a href="https://github.com/harshkushwaha7x/QuickChat/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license" /></a>
+  <img src="https://img.shields.io/badge/version-1.0.0-success?style=flat-square" alt="version" />
+</p>
 
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Real-Time Events](#real-time-events)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
+</div>
 
 ---
 
-## Overview
+## 💬 Overview
 
-Quick-Chat is a full-stack real-time chat application that enables instant messaging with features like:
+**QuickChat** is a full-stack real-time chat application enabling users to communicate instantly with live message updates, authentication, and profile management.
+Built using **Socket.io**, **MERN Stack**, and **Cloudinary**, it delivers a fast, responsive, and scalable messaging experience.
 
-- 🔐 Secure user authentication
-- ⚡ Real-time message delivery
-- 👥 User profiles and status
-- 📱 Responsive design for all devices
-- 🔄 Message history persistence
-- 🔊 Notification system
+Core highlights:
 
-Built with modern web technologies to deliver a seamless chatting experience.
-
----
-
-## Key Features
-
-### Real-Time Communication
-- Instant message delivery with Socket.io
-- Typing indicators
-- Online/offline status
-- Read receipts
-
-### User Experience
-- Clean, modern interface
-- Responsive design
-- Dark/light mode
-- Emoji support
-- Message search
-
-### Security
-- JWT authentication
-- Password encryption
-- Protected routes
-- Session management
-
-### Advanced Functionality
-- Message history
-- User profiles
-- Notification system
-- Image/file sharing (via Cloudinary)
+* ⚡ **Real-Time Messaging**: Instant delivery powered by Socket.io
+* 🔐 **Secure Authentication**: JWT-based login system
+* 👥 **User Profiles**: Status, avatars, and personalization
+* 📱 **Responsive UI**: Optimized for all devices
+* 🔊 **Smart Notifications**: Message and activity alerts
 
 ---
 
-## Tech Stack
+## 🚀 Key Features
+
+### ⚡ Real-Time Communication
+
+* Instant message delivery using Socket.io
+* Typing indicators and online/offline status
+* Read receipts and message history
+* Notifications for new messages
+
+### 👤 User Management
+
+* JWT authentication for secure login
+* Encrypted password storage with bcrypt
+* Profile updates with avatar uploads
+* Session persistence and token validation
+
+### 🧠 Enhanced Experience
+
+* Clean, modern interface with TailwindCSS
+* Dark and light mode support
+* Emoji and media sharing (Cloudinary)
+* Search messages and users
+
+---
+
+## ⚙️ Tech Stack
 
 ### Frontend
-- **React** with Vite
-- **Socket.io-client** for real-time updates
-- **Context API** for state management
-- **Axios** for HTTP requests
-- **Tailwind CSS** for styling
-- **React Icons** for beautiful icons
+
+* React 19.1.1 + Vite
+* Tailwind CSS
+* Socket.io Client
+* Axios & React Router DOM
+* React Context API
+* React Icons
 
 ### Backend
-- **Node.js** with **Express**
-- **Socket.io** for WebSocket communication
-- **MongoDB** with **Mongoose**
-- **JWT** for authentication
-- **Bcrypt** for password hashing
-- **Cloudinary** for media storage
 
-### DevOps
-- **Vercel** for frontend hosting
-- **Render** for backend hosting
-- **GitHub Actions** for CI/CD
+* Node.js + Express
+* MongoDB & Mongoose
+* Socket.io
+* JWT Authentication
+* bcryptjs
+* Cloudinary for file storage
+
+### DevOps / Cloud
+
+* Vercel (Frontend)
+* Render / Railway (Backend)
+* MongoDB Atlas (Database)
+* GitHub Actions for CI/CD
 
 ---
 
-## Project Structure
+## 🧩 Architecture
 
-```groovy
-quick-chat/
-├── client/                  # Frontend application
-│   ├── public/             # Static assets
+```text
+QuickChat/
+├── client/                  # React Frontend (Vite + Tailwind)
 │   ├── src/
-│   │   ├── assets/         # Images, icons
-│   │   ├── components/     # Reusable components
-│   │   │   ├── ChatContainer.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   └── RightSidebar.jsx
-│   │   ├── context/        # Global state
-│   │   │   ├── AuthContext.jsx
-│   │   │   └── ChatContext.jsx
-│   │   ├── lib/            # Utilities
-│   │   │   └── utils.js
-│   │   ├── pages/          # Route pages
-│   │   │   ├── HomePage.jsx
-│   │   │   ├── LoginPage.jsx
-│   │   │   └── ProfilePage.jsx
-│   │   └── ...             # Other config files
+│   │   ├── components/     # ChatContainer, Sidebar, etc.
+│   │   ├── context/        # AuthContext, ChatContext
+│   │   ├── pages/          # Login, Chat, Profile
+│   │   ├── assets/         # Images, icons, CSS
+│   │   └── main.jsx        # Entry point
+│   ├── package.json
+│   └── vite.config.js
 │
-├── server/                 # Backend application
-│   ├── controllers/        # Business logic
-│   │   ├── messageController.js
-│   │   └── userController.js
-│   ├── lib/                # Utilities
-│   │   ├── cloudinary.js
-│   │   ├── db.js
-│   │   └── utils.js
+├── server/                 # Express Backend + Socket.io
+│   ├── controllers/        # User & Message logic
+│   ├── models/             # User & Message schemas
+│   ├── routes/             # API route definitions
 │   ├── middleware/         # Auth middleware
-│   │   └── auth.js
-│   ├── models/             # Database models
-│   │   ├── Messages.js
-│   │   └── User.js
-│   ├── routes/             # API routes
-│   │   ├── messageRoutes.js
-│   │   └── userRoutes.js
-│   └── ...                 # Other server files
+│   ├── config/             # DB & Cloudinary setup
+│   └── server.js           # Express + Socket.io server
+│
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## Getting Started
+## 🧰 Getting Started
 
 ### Prerequisites
 
-- Node.js (v18+)
-- npm (v9+)
-- MongoDB Atlas account or local MongoDB
-- Cloudinary account (for media storage)
+* Node.js v18+
+* MongoDB Atlas account
+* Cloudinary account (for image uploads)
 
 ### Installation
 
-1. Clone the repository:
-```console
-git clone https://github.com/elyse502/quick-chat.git
-cd quick-chat
+```bash
+git clone https://github.com/harshkushwaha7x/QuickChat.git
+cd QuickChat
 ```
 
-2. Install dependencies for both client and server:
-```console
-# Install client dependencies
+#### Install Dependencies
+
+```bash
 cd client && npm install
-
-# Install server dependencies
-cd ../server && npm install
+cd server && npm install
 ```
 
-3. Set up environment variables:
-Create `.env` files in both `client` and `server` directories with required credentials.
+#### Environment Variables
 
-### Environment Variables
+**Client (.env):**
 
-**Server (.env)**
-```env
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-PORT=5000
-```
-
-**Client (.env)**
 ```env
 VITE_BACKEND_URL=http://localhost:5000
 ```
 
-4. Start the development servers:
-```console
-# In one terminal (server)
+**Server (.env):**
+
+```env
+MONGODB_URI=your-mongodb-uri
+JWT_SECRET=your-jwt-secret
+CLOUDINARY_CLOUD_NAME=your-cloudinary-name
+CLOUDINARY_API_KEY=your-api-key
+CLOUDINARY_API_SECRET=your-api-secret
+PORT=5000
+```
+
+#### Run Project
+
+```bash
+# Terminal 1 - Start Backend (Port 5000)
 cd server && npm run server
 
-# In another terminal (client)
+# Terminal 2 - Start Frontend (Port 5173)
 cd client && npm run dev
 ```
 
 ---
 
-## Usage
+## 💡 Real-Time Events
 
-1. **Register/Login**: Create an account or log in
-2. **Find Contacts**: Search for other users
-3. **Start Chatting**: Select a contact and begin messaging
-4. **Real-Time Updates**: See messages appear instantly
-5. **Profile Management**: Update your profile picture and status
+* `new-user` — When a user connects
+* `send-message` — Emit message to recipient
+* `receive-message` — Receive live messages
+* `typing` / `stop-typing` — Show typing indicators
 
 ---
 
-## API Endpoints
+## 🔌 API Endpoints
 
 ### Authentication
-| Method | Endpoint              | Description                |
-|--------|-----------------------|----------------------------|
-| POST   | /api/auth/signup      | Register new user          |
-| POST   | /api/auth/login       | Login user                 |
-| GET    | /api/auth/check       | Check auth (protected)     |
-| PUT    | /api/auth/update-profile | Update profile (protected) |
+
+* `POST /api/auth/register` — Register new user
+* `POST /api/auth/login` — User login
+* `GET /api/auth/me` — Get current user
 
 ### Users
-| Method | Endpoint          | Description          |
-|--------|-------------------|----------------------|
-| GET    | /api/users        | Get all users        |
-| GET    | /api/users/:id    | Get specific user    |
-| PUT    | /api/users/:id    | Update user          |
+
+* `GET /api/users` — Get all users
+* `GET /api/users/:id` — Get specific user
+* `PUT /api/users/:id` — Update profile
 
 ### Messages
-| Method | Endpoint           | Description          |
-|--------|--------------------|----------------------|
-| GET    | /api/messages/:chatId | Get chat messages |
-| POST   | /api/messages      | Send new message    |
+
+* `GET /api/messages/:chatId` — Fetch messages
+* `POST /api/messages` — Send message
 
 ---
 
-## Real-Time Events
+## ☁️ Deployment
 
-### Emitted Events
-- `new-user` - When a user connects
-- `send-message` - When sending a message
-- `typing` - When user is typing
-- `stop-typing` - When user stops typing
-
-### Received Events
-- `receive-message` - When receiving a message
-- `user-connected` - When another user connects
-- `user-typing` - When another user is typing
+* Frontend → Vercel
+* Backend → Render / Railway
+* Database → MongoDB Atlas
 
 ---
 
-## Deployment
+## ⚡ Performance
 
-### Frontend
-[![Deploy with Vercel](https://vercel.com/button)](https://quick-chat-nine-beta.vercel.app)
-
-### Backend
-Deploy to Render, Vercel, or other Node.js hosting services with MongoDB connection.
-
----
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+* Optimized Vite builds
+* WebSocket-based real-time messaging
+* Scalable architecture
+* Secure JWT authentication
 
 ---
 
+## 🤝 Contributing
 
-## License
-
-Distributed under the MIT License. See [LICENSE](https://github.com/elyse502/quick-chat/blob/main/LICENSE) for more information.
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m "Add new feature"`)
+4. Push & open a Pull Request
 
 ---
 
-## 📞 Contact
-For any questions or support, please contact:
-- [**NIYIBIZI Elysée**](https://linktr.ee/niyibizi_elysee)👨🏿‍💻 | [Github](https://github.com/elyse502) | [Linkedin](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) | [Twitter](https://twitter.com/Niyibizi_Elyse).
-- **Email**: <elyseniyibizi502@gmail.com>
+## 🪪 License
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) [![@phenrysay](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Niyibizi_Elyse) [![pH-7](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elyse502)
+This project is licensed under the **MIT License** — see [LICENSE](https://github.com/harshkushwaha7x/QuickChat/blob/main/LICENSE).
+
+---
+
+## 📬 Contact
+
+**Harsh Kushwaha** — Developer & Maintainer
+
+* Portfolio: [https://harshkushwaha7x.github.io/Portfolio](https://harshkushwaha7x.github.io/Portfolio)
+* GitHub: [https://github.com/harshkushwaha7x](https://github.com/harshkushwaha7x)
+* LinkedIn: [https://www.linkedin.com/in/harshkushwaha7x/](https://www.linkedin.com/in/harshkushwaha7x/)
+* Email: [harshkushwaha4151@gmail.com](mailto:harshkushwaha4151@gmail.com)
 
 ---
 
 <div align="center">
 
-**Quick-Chat** - Where conversations happen in real-time! 🚀✨
-
-**Made with ❤️ by <i>[Elysée NIYIBIZI](https://elyse502.github.io/Elysee-Portfolio/)</i>**
-
-[⬆ Back to Top](#table-of-contents)
+**QUICKCHAT** – Connect Instantly. Chat Seamlessly. ⚡
+Built by <b>Harsh Kushwaha</b>
 
 </div>
 
-
-
-
-
+---
