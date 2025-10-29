@@ -185,20 +185,17 @@ cd client && npm run dev
 
 ### Authentication
 
-* `POST /api/auth/register` — Register new user
-* `POST /api/auth/login` — User login
-* `GET /api/auth/me` — Get current user
-
-### Users
-
-* `GET /api/users` — Get all users
-* `GET /api/users/:id` — Get specific user
-* `PUT /api/users/:id` — Update profile
+* POST /api/auth/signup — Register new user
+* POST /api/auth/login — User login
+* GET /api/auth/check — Auth check (protected)
+* PUT /api/auth/update-profile — Profile update (protected)
 
 ### Messages
 
-* `GET /api/messages/:chatId` — Fetch messages
-* `POST /api/messages` — Send message
+* GET /api/messages/users — Sidebar users (protected)
+* GET /api/messages/:id — Messages with user (protected)
+* PUT /api/messages/mark/:id — Mark a message as seen (protected)
+* POST /api/messages/send/:id — Send text/image to user (protected)
 
 ---
 
