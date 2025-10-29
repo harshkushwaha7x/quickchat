@@ -189,7 +189,7 @@ Create `.env` files in both `client` and `server` directories with required cred
 
 **Server (.env)**
 ```env
-MONGO_URI=your_mongodb_connection_string
+MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_name
 CLOUDINARY_API_KEY=your_api_key
@@ -199,14 +199,13 @@ PORT=5000
 
 **Client (.env)**
 ```env
-VITE_API_BASE_URL=http://localhost:5000
-VITE_SOCKET_URL=http://localhost:5000
+VITE_BACKEND_URL=http://localhost:5000
 ```
 
 4. Start the development servers:
 ```console
 # In one terminal (server)
-cd server && npm run dev
+cd server && npm run server
 
 # In another terminal (client)
 cd client && npm run dev
@@ -227,10 +226,12 @@ cd client && npm run dev
 ## API Endpoints
 
 ### Authentication
-| Method | Endpoint          | Description          |
-|--------|-------------------|----------------------|
-| POST   | /api/auth/register| Register new user    |
-| POST   | /api/auth/login   | Login user           |
+| Method | Endpoint              | Description                |
+|--------|-----------------------|----------------------------|
+| POST   | /api/auth/signup      | Register new user          |
+| POST   | /api/auth/login       | Login user                 |
+| GET    | /api/auth/check       | Check auth (protected)     |
+| PUT    | /api/auth/update-profile | Update profile (protected) |
 
 ### Users
 | Method | Endpoint          | Description          |
