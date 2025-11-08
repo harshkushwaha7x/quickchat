@@ -4,7 +4,7 @@
 
 **QuickChat** is a full-stack real-time messaging platform built with modern web technologies. It enables **instant communication**, **secure authentication**, and **seamless chatting** — designed for individuals and teams who value fast and reliable conversations.
 
-[Live Demo](https://quickchat-orcin.vercel.app/) • [Portfolio](https://harshkushwaha7x.github.io/Portflio.2/) • [GitHub](https://github.com/harshkushwaha7x/quickchat)
+[Live Demo](https://quickchat-orcin.vercel.app/) • [Portfolio](https://portflio-3.vercel.app/) • [GitHub](https://github.com/harshkushwaha7x/quickchat)
 
 </div>
 
